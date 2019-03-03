@@ -9,9 +9,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog = Dog("ポチ", 3)
+        val human = Human("セキドタクミ", 24, "読書")
+        human.say()
+        Log.d("kotlintest", "私の名前は" + human.name + "です。")
+        Log.d("kotlintest", "年は" + human.age + "です。")
 
-        dog.move()
+        human.think()
     }
 
 }

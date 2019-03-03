@@ -8,6 +8,7 @@ abstract class Animal {
     constructor(name: String, age: Int){
         this.name = name
         this.age = age
+
     }
 
     abstract fun say()
